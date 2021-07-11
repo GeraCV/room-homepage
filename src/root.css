@@ -1,0 +1,53 @@
+*,
+ * ::before,
+ * ::after {
+   box-sizing: border-box;
+   margin: 0;
+
+ }
+
+ :root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+ }
+
+ body {
+   position: relative;
+  font-family: Spartan, sans-serif;
+  font-size: 12px;
+ }
+
+ .text-principal {
+    color: var(--Dark-Gray);
+    line-height: 1.2rem;
+
+  }
+
+  .hidden {
+  top: -100px;
+  display: none;
+  }
+
+  .show {
+    top: 0;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .dark {
+    
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: block;
+}
+  

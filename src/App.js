@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import '../src/root.css'
+import AboutOur from './components/aboutour'
+import Banner from './components/banner'
+import Header from './components/header'
+import SectionPrincipal from './components/sectionPrincipal'
+import Dark from './components/dark'
+
+import { MenuProvider } from './context/menu'
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <MenuProvider>
+        <Header />
+        <Banner />
+        <SectionPrincipal />
+        <AboutOur />
+        <Dark />
+      </MenuProvider>
+    </>
+  )
 }
 
 export default App;
