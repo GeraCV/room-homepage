@@ -12,16 +12,40 @@ const SectionPrincipalStyled = styled.div`
     margin-bottom: 1.5rem;
   }
 
-
   .container-shop {
     display: flex;
     margin: 3.5rem 0;
   }
 
+  .container-shop:hover {
+    color: gray;
+  } 
+
   .text-shop {
     font-weight: 600;
     letter-spacing: .5rem;
     margin-right: 2rem;
+  }
+
+  @media screen and (min-width: 950px){
+
+    margin: auto 3.5rem;
+  
+    .container-shop {
+      margin: 1.5rem 0;
+    }
+
+     .text-principal {
+      font-size: .6rem;
+    }
+
+    .text-shop {
+      font-size: .6rem;
+    }
+
+    .arrow-left {
+      width: 10%;
+    }
   }
 
 
@@ -45,7 +69,7 @@ const SectionPrincipal = () => {
         <p className="text-shop">
           SHOP NOW
         </p>
-        <img src={arrow} alt="arrow-left" />
+        <img src={arrow} alt="arrow-left" className="arrow-left" />
       </div>
     </SectionPrincipalStyled>
   )

@@ -1,11 +1,11 @@
 import '../src/root.css'
 import AboutOur from './components/aboutour'
-import Banner from './components/banner'
 import Header from './components/header'
 import SectionPrincipal from './components/sectionPrincipal'
 import Dark from './components/dark'
-
+import Banner from './components/banner'
 import { MenuProvider } from './context/menu'
+
 
 
 function App() {
@@ -13,9 +13,13 @@ function App() {
   return (
     <>
       <MenuProvider>
-        <Header />
-        <Banner />
-        <SectionPrincipal />
+        <div className="grid-to-desk-d">
+          <div className="first-container-desk-d">
+            <Header />
+            <Banner />
+          </div>
+          <SectionPrincipal />
+        </div>
         <AboutOur />
         <Dark />
       </MenuProvider>

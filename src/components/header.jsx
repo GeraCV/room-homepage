@@ -3,10 +3,9 @@ import logo from '../images/logo.svg'
 import iconhamburger from '../images/icon-hamburger.svg'
 import styled from 'styled-components'
 import MenuTooltip from './menutooltip'
-
 import Menu from '../context/menu'
 
-const HeaderStyled = styled.div`
+const HeaderStyled = styled.header`
 
   background: #000;
   display:grid;
@@ -23,6 +22,12 @@ const HeaderStyled = styled.div`
   img:first-child {
     margin-left: 1.5rem;
   }
+
+   @media screen and (min-width: 950px){
+
+    display: none;
+  }
+
 
 `
 

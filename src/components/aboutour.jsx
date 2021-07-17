@@ -9,6 +9,7 @@ const AboutOurStyled = styled.div`
   margin: 3rem 2rem;
 }
 
+
 .title-second-section {
   margin-bottom: 1rem;
   letter-spacing: .2rem;
@@ -24,6 +25,24 @@ const AboutOurStyled = styled.div`
   width: 100%;
   display:block;
 }
+
+  @media screen and (min-width: 950px){
+
+  display: grid;
+  grid-template-columns: 1fr 28rem 1fr;
+
+  .text-principal {
+    font-size: .6rem;
+  }
+
+  .container-text-about {
+    margin: auto 2rem;
+  }
+
+  .image-li {
+    min-height: 161px;
+  }
+  }
 `
 
 const AboutOur = () => {
@@ -50,7 +69,7 @@ const AboutOur = () => {
         </p>
       </div>
       <div className="container-image-about">
-        <img src={imagelight} alt="space-light" className="image-about" />
+        <img src={imagelight} alt="space-light" className="image-about image-li" />
       </div>
     </AboutOurStyled>
 
